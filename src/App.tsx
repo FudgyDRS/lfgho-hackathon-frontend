@@ -5,6 +5,7 @@ import {
   ConnectKitButton,
   getDefaultConfig,
 } from 'connectkit';
+import Dashboard from './components/Dashboard/Dashboard';
 
 interface AppProps {}
 
@@ -25,7 +26,7 @@ const App: React.FC<AppProps> = () => {
   return (
     <WagmiConfig config={config}>
       <ConnectKitProvider>
-        {/* Your App */}
+        <Dashboard />
         <ConnectKitButton />
       </ConnectKitProvider>
     </WagmiConfig>
