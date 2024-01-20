@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'DisposableDroidBB';
+  src: url('./fonts/DisposableDroidBB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DisposableDroidBB_bld';
+  src: url('./fonts/DisposableDroidBB_bld.ttf') format('truetype');
+}
+
+body {
+  font-family: 'DisposableDroidBB_bld';
+  font-size: 16pt;
+  overflow: hidden;
+}

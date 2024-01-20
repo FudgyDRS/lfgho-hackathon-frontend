@@ -6,6 +6,7 @@ import {
   getDefaultConfig,
 } from 'connectkit';
 import Dashboard from './components/Dashboard/Dashboard';
+import './App.css';
 
 interface AppProps {}
 
@@ -27,7 +28,6 @@ const App: React.FC<AppProps> = () => {
     <WagmiConfig config={config}>
       <ConnectKitProvider theme="midnight" mode="dark">
         <Dashboard />
-        <ConnectKitButton />
       </ConnectKitProvider>
     </WagmiConfig>
   );

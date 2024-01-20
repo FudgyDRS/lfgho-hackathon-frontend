@@ -1,0 +1,119 @@
+.dashboard {
+  width: 60vw;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.connect-button {
+  display: flex;
+  justify-content: right;
+}
+
+.endorsed-check-header {
+  font-size: 3rem;
+}
+.pending-check-header {
+  font-size: 3rem;
+}
+.sent-check-header {
+  font-size: 3rem;
+}
+
+.send-check {
+  border-radius: 5px;
+  background-color: #dadada;
+  border-width: 15px;
+  border-color: black;
+  width: 65%;
+  color: black;
+  margin: 15px;
+  padding: 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 6px 6px 20px 6px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.endorsed-checks-box {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.59) 3px 3px 10px 3px;
+  border-radius: 20px;
+  background: transparent;
+  background-color: transparent;
+  border: 5px solid rgb(85, 85, 85);
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+.pending-checks-box {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.59) 3px 3px 10px 3px;
+  border-radius: 20px;
+  background: transparent;
+  background-color: transparent;
+  border: 5px solid rgb(85, 85, 85);
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+.sent-checks-box {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.59) 3px 3px 10px 3px;
+  border-radius: 20px;
+  background: transparent;
+  background-color: transparent;
+  border: 5px solid rgb(85, 85, 85);
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+
+.endorsed-check-table {
+  border-color: black;
+  border-width: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dadada
+}
+
+.pending-check-table {
+  border-color: black;
+  border-width: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dadada
+}
+
+.sent-check-table {
+  border-color: black;
+  border-width: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dadada
+}
