@@ -2,6 +2,9 @@
   width: 60vw;
   padding: 50px;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .title {
@@ -43,7 +46,17 @@
   font-weight: 800;
   text-align: center;
   margin: 0 auto;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+
+  &:active {
+    background-color: #a0a0a0;
+  }
 }
+
 
 .endorsed-checks-box {
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -53,14 +66,16 @@
   background: transparent;
   background-color: transparent;
   border: 5px solid rgb(85, 85, 85);
-  width: 100%;
+  width: calc(100% - 40px); /* Adjusted width to consider padding and margin */
   padding: 20px;
   margin: 20px;
 
   @media (max-width: 768px) {
     width: 95%;
+    margin: 10px; /* Adjusted margin for smaller screens */
   }
 }
+
 .pending-checks-box {
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   overflow: hidden;
@@ -69,14 +84,16 @@
   background: transparent;
   background-color: transparent;
   border: 5px solid rgb(85, 85, 85);
-  width: 100%;
+  width: calc(100% - 40px); /* Adjusted width to consider padding and margin */
   padding: 20px;
   margin: 20px;
 
   @media (max-width: 768px) {
     width: 95%;
+    margin: 10px; /* Adjusted margin for smaller screens */
   }
 }
+
 .sent-checks-box {
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   overflow: hidden;
@@ -85,12 +102,13 @@
   background: transparent;
   background-color: transparent;
   border: 5px solid rgb(85, 85, 85);
-  width: 100%;
+  width: calc(100% - 40px); /* Adjusted width to consider padding and margin */
   padding: 20px;
   margin: 20px;
 
   @media (max-width: 768px) {
     width: 95%;
+    margin: 10px; /* Adjusted margin for smaller screens */
   }
 }
 
@@ -99,7 +117,8 @@
   border-width: 5px;
   margin: 10px;
   padding: 10px;
-  background-color: #dadada
+  max-height: 300px;
+  overflow: auto;
 }
 
 .pending-check-table {
@@ -107,7 +126,8 @@
   border-width: 5px;
   margin: 10px;
   padding: 10px;
-  background-color: #dadada
+  max-height: 300px;
+  overflow: auto;
 }
 
 .sent-check-table {
@@ -115,5 +135,49 @@
   border-width: 5px;
   margin: 10px;
   padding: 10px;
-  background-color: #dadada
+  max-height: 300px;
+  overflow: auto;
+}
+
+.check-container {
+  border: 2px solid #000;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.check-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check-middle {
+  margin-top: 20px;
+}
+
+.check-footer {
+  margin-top: 20px;
+  position: relative;
+}
+
+.check-check-number {
+  font-weight: bold;
+}
+
+.check-endorsed {
+  font-style: italic;
+}
+
+.check-memo {
+  margin-top: 10px;
+}
+
+.check-endorse {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid #000;
+  padding: 5px 10px;
+  cursor: pointer;
 }
